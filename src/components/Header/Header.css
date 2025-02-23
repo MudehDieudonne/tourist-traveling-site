@@ -1,83 +1,87 @@
 header {
   width: 100%;
   font-family: Arial, sans-serif;
+  z-index: auto;
 }
 
-/* NavContact Styling */
 .navContact {
   background-color: #304F47;
   color: white;
-  padding: 1em 5em; /* Padding for spacing */
+  padding: 0 13em;
   display: flex;
-  justify-content: space-between; /* Space between contact info and socials */
+  justify-content: space-between;
   align-items: center;
+  height: 50px;
 }
 
 .nav-contact {
-  list-style: none; /* Remove default list styling */
+  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 20px; /* Space between list items */
+  gap: 20px;
 }
 
 .nav-contact li {
   display: flex;
   align-items: center;
-  gap: 8px; /* Space between icon and text */
+  gap: 8px;
 }
 
 .nav-contact img {
-  width: 20px; /* Adjust icon size */
+  width: 20px;
   height: 20px;
   filter: brightness(0) invert(1);
 }
 
 .nav-socials {
   display: flex;
-  gap: 15px; /* Space between social icons */
+  gap: 15px;
 }
 
 .nav-socials img {
-  width: 24px; /* Adjust social icon size */
+  width: 24px;
   height: 24px;
-  filter: brightness(0) invert(1); /* Make icons white */
+  filter: brightness(0) invert(1);
 }
 
 /* Navbar Styling */
 .navbar {
-  background-color: transparent; /* Transparent background */
-  padding: 1em 3em;
+  background-color: transparent;
   max-width: 1173px;
+  height: 97px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  top: 60px;
+  left: 40px;
 }
 
 .navitem {
   display: flex;
   align-items: center;
-  gap: 20px; /* Space between logo and links */
+  gap: 20px;
 }
 
-.navitem h2 {
-  color: #304F47; /* Logo text color */
-  margin: 0;
+.navitem .logoimg {
+  width: 96px;
+  height: 97px;
 }
 
 .navitem a {
-  color: #304F47; /* Link text color */
-  text-decoration: none; /* Remove underline */
+  color: #304F47;
+  text-decoration: none;
   font-weight: bold;
 }
 
 .navitem a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
 }
 
 .navbar button {
-  background-color: #ce8312; /* Button background color */
-  color: white; /* Button text color */
+  background-color: #ce8312;
+  color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -86,5 +90,5 @@ header {
 }
 
 .navbar button:hover {
-  background-color: #1e3a32; /* Darker shade on hover */
+  background-color: #1e3a32;
 }

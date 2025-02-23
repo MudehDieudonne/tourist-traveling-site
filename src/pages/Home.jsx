@@ -8,10 +8,10 @@ const Home = () => {
         <main>
             <Header />
             <div className="hero">
-                <h1 className="hero-text">
-                    Expirience the Beuty <br /> of Rwanda with Us
-                </h1>
-                <small>Discover the Land of a Thousand Hills</small>
+                <div className="hero-text">
+                    Expirience the Beuty of Rwanda with Us
+                </div>
+                <p className="smallee">Discover the lands of a Thousand hills</p>
             </div>
             <div className="search-container">
                 <input className="search" type="text" placeholder="search activities Destination" />
@@ -39,39 +39,39 @@ const Home = () => {
 
             <div className="choose-package">
                 <h3>Choose your Package</h3>
-                <h2>Select your Best Traveling Package for <br />your Journey</h2>
+                <h1>Select your Best Traveling Package for your Journey</h1>
             </div>
 
             <div className="contaner-cards">
                 <Card
-                    title={'Jirrafe'}
-                    img={'https://plus.unsplash.com/premium_photo-1661863525569-805d25d85f96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8amlyYWZmZXxlbnwwfHwwfHx8MA%3D%3D'}
-                    description={'Derasic Park lorem '}
+                    title='Jirrafe'
+                    img='https://plus.unsplash.com/premium_photo-1661863525569-805d25d85f96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8amlyYWZmZXxlbnwwfHwwfHx8MA%3D%3D'
+                    description='Visitors to Akagera National Park can take part in a range of activities, including game drives, boat safaris, bird watching, and nature walks.'
                 />
                 <Card
-                    title={'Lion'}
-                    img={'https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlvbnxlbnwwfHwwfHx8MA%3D%3D'}
-                    description={'Derasic Park lorem '}
+                    title='Lion'
+                    img='https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlvbnxlbnwwfHwwfHx8MA%3D%3D'
+                    description='The Bisoke hike is a popular mountain trek in Rwanda, located in the Volcanoes National Park. It is one of the most challenging hikes in the park.'
                 />
                 <Card
-                    title={'WaterFall'}
-                    img={'https://media.istockphoto.com/id/577303888/photo/salto-80m-waterfall-in-chapada-dos-veadeiros-goias-brazil.webp?a=1&b=1&s=612x612&w=0&k=20&c=XdJPHaOcde7TzjCTx2zFXsTWCwfAOF7WeHPddw-vJ_A='}
-                    description={'Derasic Park lorem '}
+                    title='WaterFall'
+                    img='https://media.istockphoto.com/id/577303888/photo/salto-80m-waterfall-in-chapada-dos-veadeiros-goias-brazil.webp?a=1&b=1&s=612x612&w=0&k=20&c=XdJPHaOcde7TzjCTx2zFXsTWCwfAOF7WeHPddw-vJ_A='
+                    description='A trip to Lake Kivu can be a truly unique and memorable experience. '
                 />
                 <Card
-                    title={'Lion'}
-                    img={'https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlvbnxlbnwwfHwwfHx8MA%3D%3D'}
-                    description={'Derasic Park lorem '}
+                    title='Lion'
+                    img='https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGlvbnxlbnwwfHwwfHx8MA%3D%3D'
+                    description='Visitors to Akagera National Park can take part in a range of activities, including game drives, boat safaris, bird watching, and nature walks.'
                 />
                 <Card
-                    title={'WaterFall'}
-                    img={'https://media.istockphoto.com/id/577303888/photo/salto-80m-waterfall-in-chapada-dos-veadeiros-goias-brazil.webp?a=1&b=1&s=612x612&w=0&k=20&c=XdJPHaOcde7TzjCTx2zFXsTWCwfAOF7WeHPddw-vJ_A='}
-                    description={'Derasic Park lorem '}
+                    title='WaterFall'
+                    img='https://media.istockphoto.com/id/577303888/photo/salto-80m-waterfall-in-chapada-dos-veadeiros-goias-brazil.webp?a=1&b=1&s=612x612&w=0&k=20&c=XdJPHaOcde7TzjCTx2zFXsTWCwfAOF7WeHPddw-vJ_A='
+                    description='The Bisoke hike is a popular mountain trek in Rwanda, located in the Volcanoes National Park. It is one of the most challenging hikes in the park.'
                 />
                 <Card
-                    title={'Jirrafe'}
-                    img={'https://plus.unsplash.com/premium_photo-1661863525569-805d25d85f96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8amlyYWZmZXxlbnwwfHwwfHx8MA%3D%3D'}
-                    description={'Derasic Park lorem '}
+                    title='Jirrafe'
+                    img='https://plus.unsplash.com/premium_photo-1661863525569-805d25d85f96?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8amlyYWZmZXxlbnwwfHwwfHx8MA%3D%3D'
+                    description='The Bisoke hike is a popular mountain trek in Rwanda, located in the Volcanoes National Park. It is one of the most challenging hikes in the park.'
                 />
             </div>
 
@@ -82,33 +82,33 @@ const Home = () => {
 
             <div className="slider">
                 <CardRnd
-                    title={'Jirrafe'}
-                    img={'https://plus.unsplash.com/premium_photo-1724701624533-dea17ce5e61e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bmF0aXZlJTIwYWZyaWNhbiUyMGhvbWV8ZW58MHx8MHx8fDA%3D'}
-                    description={'Lorem Ispum beatch Hous '}
+                    title='Jirrafe'
+                    img='https://plus.unsplash.com/premium_photo-1724701624533-dea17ce5e61e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bmF0aXZlJTIwYWZyaWNhbiUyMGhvbWV8ZW58MHx8MHx8fDA%3D'
+                    description='Lorem Ispum beatch Hous '
                 />
 
                 <CardRnd
-                    title={'Jirrafe'}
-                    img={'https://media.istockphoto.com/id/1149453484/photo/lanscape-with-mataya-village-of-sara-tribe-people-guera-chad.webp?a=1&b=1&s=612x612&w=0&k=20&c=HtCoSw-PBqR8CQnaKdbxDKT1Tffb2SmbJDM3KB4rbCI='}
-                    description={'Lorem Ispum beatch Hous '}
+                    title='Jirrafe'
+                    img='https://media.istockphoto.com/id/1149453484/photo/lanscape-with-mataya-village-of-sara-tribe-people-guera-chad.webp?a=1&b=1&s=612x612&w=0&k=20&c=HtCoSw-PBqR8CQnaKdbxDKT1Tffb2SmbJDM3KB4rbCI='
+                    description='Lorem Ispum beatch Hous '
                 />
 
                 <CardRnd
-                    title={'Jirrafe'}
-                    img={'https://media.istockphoto.com/id/1962441295/photo/young-tuareg-with-camels-on-western-sahara-desert-in-africa.webp?a=1&b=1&s=612x612&w=0&k=20&c=0Tj5qDy7UoQ9uTynv7XobP2b-dUY5WLfA26DXlCgLD0='}
-                    description={'Lorem Ispum beatch Hous '}
+                    title='Jirrafe'
+                    img='https://media.istockphoto.com/id/1962441295/photo/young-tuareg-with-camels-on-western-sahara-desert-in-africa.webp?a=1&b=1&s=612x612&w=0&k=20&c=0Tj5qDy7UoQ9uTynv7XobP2b-dUY5WLfA26DXlCgLD0='
+                    description='Lorem Ispum beatch Hous '
                 />
 
                 <CardRnd
-                    title={'Jirrafe'}
-                    img={'https://images.unsplash.com/photo-1501183638710-841dd1904471?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG5hdGl2ZSUyMGFmcmljYW4lMjBob21lfGVufDB8fDB8fHww'}
-                    description={'Lorem Ispum beatch Hous '}
+                    title='Jirrafe'
+                    img='https://images.unsplash.com/photo-1501183638710-841dd1904471?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG5hdGl2ZSUyMGFmcmljYW4lMjBob21lfGVufDB8fDB8fHww'
+                    description='Lorem Ispum beatch Hous '
                 />
 
                 <CardRnd
-                    title={'Jirrafe'}
-                    img={'https://images.unsplash.com/photo-1510739628590-0c601822e0a0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmF0aXZlJTIwaG9tZXxlbnwwfHwwfHx8MA%3D%3D'}
-                    description={'Lorem Ispum beatch Hous '}
+                    title='Jirrafe'
+                    img='https://images.unsplash.com/photo-1510739628590-0c601822e0a0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bmF0aXZlJTIwaG9tZXxlbnwwfHwwfHx8MA%3D%3D'
+                    description='Lorem Ispum beatch Hous '
                 />
             </div>
 

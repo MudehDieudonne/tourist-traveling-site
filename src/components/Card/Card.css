@@ -1,19 +1,15 @@
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 25%;
+  width: 350px;
+  height: 584px;
+  border: 1px solid rgba(168, 168, 168, 0.562);
   border-radius: 5px;
   margin: 0.5em;
-
 }
 
 .cardrnd {
-  box-shadow: 0 4px 8px 0 rgba(236, 236, 236, 0.568);
-  transition: 0.3s;
   width: 25%;
   border-radius: 5px;
   margin: 0.5em;
-
 }
 
 .card:hover {
@@ -29,7 +25,6 @@ img {
 
 .round {
   border-radius: 10px;
-  
 }
 
 .container {
@@ -42,4 +37,16 @@ img {
   justify-content: space-evenly;
   gap: 1em;
   padding: 1em 0.5em;
+}
+
+button {
+  max-width: 117.25px;
+  max-height: 56px;
+  background-color: #C7923E;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
 }

@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0; 
+}
+
+.all-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: aliceblue;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.473), rgba(2, 2, 2, 0.411)), url('https://s3-alpha-sig.figma.com/img/673f/2e91/1bcc8157232409198c246b045a73b73f?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=BVkjijU3gTqFfa7n8X8Xa0tkI1mw3DkYbFPIrZJltJVqxQcByf2VQn1rQs1IH8zoapqUFJEkCDALMeoElmpeQCo3lL1lX1UDtuDwt8FGr7ZuMA6DGqEHJBckK8waU1RtGh-CiUXlZX-79hnrD35ueTY9GVe0Xh-Lgn1kJFCC~nhZ06ZroHN0W2~NQ1ytIY2Jnp78lWUkeVY41koKvV0OlqdTnelBxtopPk9CddU4dPA1EAOVebw9rczPy-kUur7c2uIRbA4rO6s5TSFHtD6Uxuxi~9BW-Q6u3OkZxIJZvQsOEYOZg~uRpowkVfd9WH73aKKF6abdppxySfmFUpShCA__');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* width: 1280px; */
+  height: 466px;
+  /* position: relative; */
+}
+
+.all-hero-text {
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 74.4px;
+  letter-spacing: 0.3%;
+  width: 669px;
+  height: 148px;
+}
+
+.all-cont {
+  display: flex;
+}
+
+.all-smallee {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.5%;
+  width: 354px;
+  height: 25px;
+}
