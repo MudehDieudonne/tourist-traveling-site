@@ -39,3 +39,22 @@
   width: 354px;
   height: 25px;
 }
+
+h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 76.8px;
+  letter-spacing: 0.3%;
+}
+
+.hero-det {
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 0.5%;
+  line-height: 38.4px;
+}
+
+.yellow-text {
+  color: #C7923E;
+}

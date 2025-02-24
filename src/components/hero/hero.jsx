@@ -5,7 +5,7 @@ function Allhero(props) {
     return (
         <div className="all-hero">
             <h1>{props.title}</h1>
-            <p className="hero-det">Home <span> &#x22D7; Tour Pakage</span></p>
+            <p className="hero-det">Home <span className="yellow-text"> &#x22D7; {props.title}</span></p>
         </div>
     )
 }

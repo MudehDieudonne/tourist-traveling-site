@@ -8,7 +8,7 @@ function Pakage() {
     return (
     <>
         <Header />
-        <Allhero />
+        <Allhero title='Contact us' />
         <div className="choose-package">
             <h3>Choose your Package</h3>
             <h1>Select your Best Traveling Package for your Journey</h1>
