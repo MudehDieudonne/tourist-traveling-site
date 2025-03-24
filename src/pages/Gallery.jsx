@@ -1,86 +1,93 @@
 import React from "react"
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
+import Allhero from "../components/hero/hero"
 import './Gallery.css'
 
 export default function Gallery () {
     return (
         <>
             <Header />
-                <div className="grid-wrwaper">
-                    <div className="gallery">
-                        <img src="https://s3-alpha-sig.figma.com/img/4ff2/5fbb/d22801330eccf9aaeedf7388f729ecdf?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=szEUR6hNWkXzJIOVxDtJrT-TXVhNj5bWHAWhZyDfvjEjnPRhIwR750uREpQLgLKzhTGQ08U~F1sQt2oX3ZrgHXO9MgOn9CxEoyWSek0GvKkz0r7rl16qmn-4ZrUTlY3QdFfGb9WgNy0ToNd-DwtGVUnd6mDIZGLGtXza1hufCrG~9GinbDc7n2AesJyvlsQQwdduRwh-sT5y2kr92sIWVWyyf6QQEz1VUV8GpqBTLZp3pu5aV5f0L~0jLoLvrQRARY5qWM9QI6lAele9TXfXPfT9mryWXUUBScuw5yaxczQVnkpOLzLb6dWDBXWeCeZCFP47V41VwAPnkNYSTNZazw__" alt="img01" />
-                    </div>
-                    <div className="gallery">
-                        <img src="https://s3-alpha-sig.figma.com/img/8617/a5ae/25ee4aa2ad522926670eec6990d4dfd8?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=UP29Azac3cX8pWZxMn2xUHolZi6N3GcG4cu2dJzjHMA36e1oJGBdYOPPsvpgMSD~nVBDU6SpWxC597ijxOEPzauC5qnWTNqXN6hHiRIv~Qgcgbt05LQI7URKsGlrXtQ~5Q0HWVhqocn-gDZj~dNfJrOs6nY6TGD1Bn2bPgcqK~QOKu57UBRKDo4Z5iu4KSc3kBgV13vvqUTyHb4AdLKPfh9vRzbpQU1uryoucsyFMgmhe9jLlM0Hu5TqlNgWVcwbbgr0~aUNcxyz4508Jc~PEatjUvMDoH8u5d3m69Jj~moQZ6ajBQLaNM099IIx3jWOpM1iZ3b19LDiEneog6KHyw__" alt="img02" />
-                    </div>
-                    <div className="gallery big">
-                        <img src="https://s3-alpha-sig.figma.com/img/6521/b928/1e965b9e2b4c3f113bb67ce649d7a461?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=r2wNgUQxFm798hYM8iigkiL0Ac4F43t9rO2vYMNScYzIWW-jLE5T3UVVBG~9zPSpSIFep4nCjnY-1P3mAmgB9IsYDSotdQid5JxQ7SEHuDgH1v5vaIJ6RNYSE2P1hB8FPlL3IecuTqxUWEpuYSuCPLKeFgTpxHLXLl3sYwYyyE9n2AzPQ9-IJ61t7sz8HIkDwLWzHQnw6sx71-pNEFX7hoWwqSI3jY3ZwQMR731tDeb~Dzk3Cnw1gDPIKHIrsNpTdgEKKVATbx4FCPCnCvyNSNUm66cEH-IYAsm1bP8LL3MFIcRqXLDXwpSpFsbdAatptbX79iX0fSlJOdko-o4kEw__" alt="img03" />
-                    </div>
-                    <div className="gallery tall">
-                        <img src="https://s3-alpha-sig.figma.com/img/9c82/fc43/ae69e562278d76e28ce26cd902277c96?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Y3lxBUrgLhNKTV6UoIdwqxsacbMAGnP6DFsogx8hYHOoP8reucE0ZYaC5AfPhyrfQQzmk7gTxZ-Im4KayMl-HaNbIP6zh62GOLP9sEaIvT5Hl~UE5WTQlx9UT3l9SE1lC1wwTEsSyKpYdvyFIwJc~10ksXcUdALILm8jlS-5K~jKDmun2r39dTsDIevcgeKuu3m4NJRxEji9~SLfZRIWgdH2ag0e5Lx8dAUzTihqW7o7RFY~aqbkHdh3YQKZRaQYyybqB06oaPIHZ8GChRkumjZ1LKKdU3AHIdqACbU0MjIyqe7A1FBuc2SmcBpS8x5Gd4fTtpsr5U30XQfGhZ793g__" alt="img04" />
-                    </div>
-                    <div className="gallery">
-                        <img src="https://s3-alpha-sig.figma.com/img/0434/fdd4/a5432cab47aef939e9f35e4d4f9d4705?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=nFke0g1nMNhPN-5o-eke3aiyn~AoB1Hw17Sw~GjfaOLSuDTRE-RNNyvUXtx6eb2lsXzldiDj4yo3~ohADYE-3y-nKoLPuhHbPziROpwEy0tLJMUCtugxDxBVZINEew2H74JR68gM4sTJ1q7s3d-bxaQWCpOMKBiSn5wgO1ib1dr8VDa9Do55aIDGMLY8QZ9KeMRE7FC9XHbcmSoPGVkuEajlGeeCL5OiRoZLlUwfZHWJuX7vawim8onBoi8HKhFr7CVnhbpAf1nnzbcHBfRuMxMIMq~Z6y2hCFLNnUwUa32vTpGjwkR0dPXg6aPaMNsr-Hem6A8SzaDg9Ioc7SBYpg__" alt="img05" />
-                    </div>
-                    <div className="gallery wide">
-                        <img src="https://s3-alpha-sig.figma.com/img/1a15/7a9b/d8d20fe935041ffe7ab54449fbea9b8b?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IgA4rMiJKKMElhBHhqys-3CCCjcTY1nMKxjyiUA80e60pEkw7HlSr-AUW2wQ8VoNPC9QVNQIg0qsFetteTkkGMalHt9~r9S5eg05z6NoYJufXR2uk0j3oteMzxI~i6lIv8uieXMeFcAmanPvwcy0FYKnCXGbIR~ZD-udKazh6YKM~zMNq9nM6IZuSAhFL4~66piyAeRb7TJSS4OAT5aWWe3fLCUUBEnT5HCiKcHzhD1iMUtW-Yf4cS3CHNp24qg38iBGYmED39tT3~3PJHWSICQQqQ-A~hbWPUPb6KLLSiuudlqots1iZsgz-z7-nvATTzvNIqhJnuooSCqveUV-Xw__" alt="img06" />
-                    </div>
-                    <div className="gallery">
-                        <img src="https://s3-alpha-sig.figma.com/img/4e43/a559/d68e2d123b678f9446c814eccc4c4e68?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fZsWNBDF0fiKEp9pbzCx30cohKiHMFmIw34DwNCrU1g7qIQxN6UY45dTLEbRZTpOp0jKpPM7d8UH2eC1QyMQUoQmmnzbC6fsFY1r8Qc1Pvd6BHO84aAYwTy1fJ6iyzUxcLrjvWUBv0DhlKo6TLfSbLIlyDUECjJPEcmmeIEvTDZRf4JjCSwCfsiHU1HXxFeFGotZLHe2OF6cIv6D144uutWr2FNLZc4rfjveV-gmhuxPmm6bDis9cUqEfTi3WbnCg7h98J8vjNJJhJ~faV5Qm7aCwFJws3iAEYFyPeuzAYhZX08v2Z-tkbVxGJ3O~gAx-IHRKehxPwuYcqVEaQoKtA__" alt="img07" />
-                    </div>
-                    <div className="gallery">
-                        <img src="https://s3-alpha-sig.figma.com/img/5a6b/207d/fff8704aa09f24e5d144271f01125edc?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=AA2pHYZvxkrfS9LZSgf7CqyhFKZZFEDz9ln068y-btFXUp~bAS~V65Gu5Png7DFkpr~AilH8fYhlu4pV~v1PB3ubv6ELWRLwSt6UkCmNjSLgS8sJYbhDGOYaIKOjmcZ--~dPnpq8rFgdOiiCdm-UXqguM128t0fsS4V2ZF~Nd8m65TgeUesWFTnVEUvMHVOGYEG9pUoSVcjk346hYN2ZQmGL8vHcCdJBNjhm7kmCmC53Ko1zFqQdQGNUlsje5hBxocSgPHHDZSgHrpq~Va2NNkzejOVByO6k4pyVcEM3MyoeBTcPvHqEjdrdijENxxfWvXGnmVv45HWWGk8Z4cF~hQ__" alt="img08" />
-                    </div>
+            <Allhero title='Gallery'/>
 
-                    <div className="gallery wide">
-                        <img src="https://s3-alpha-sig.figma.com/img/5d06/b58d/ba0e694cee79ef5384b5687366cc3ed3?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=s8QxeYj6PYG9ptlYU2FEfRCaw9gM11ubym1I21N63402JygyamiPbn3QNgEOBJzxnuN7oSA23fpsGO9mOMdIVlJqHlKqBVixt7BY91xO1DbLKrWIC4Y-yd5DE8uy-hrRso2PNs3GuPkMMyvmwTENaA0Tg5KEhrW5x~yDBF7ZDA~~A9FXisXLgiaEc5R6dchNkLTT-BcGl~NUvOAPOjAH0LNGkZz88XGOcS5cYgU4fT4Kvv5xvb9HSOuZVi5jJunSXqPlzyyJm2Oz35W8GLOFD4CKA1VP03QXu2rUvl8n4MaUDM6wimq5olHJ-jl8QGuDwkM73ljfqXynYSCeeoz3hg__" alt="img09" />
+                <div className="parent">
+                    <div className="div1">
+                        <img src="https://s3-alpha-sig.figma.com/img/4ff2/5fbb/d22801330eccf9aaeedf7388f729ecdf?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=LMvR0EqdIZDC-duBkYmu1dTy0KkSQ13IOcCdNjn51zpppuUKx9mRuUyMzBAvLT6mbJZLpsZfTPMOYUwGz0DR6wjWhi3zown6glvFT~gRVhFIch~XvI7KGERkf87ReU1oZPpykzZWGDD5z~cxvWfVj4-03PawDYBPW0a4RFlmKJqj2l3q8qFM~E0yF9zaMLUD0mvIqqpiwaZADvkzTW93FAqhn6T3vzmzPOWQxp7KJEDJ31n14eknd4jRx9CjH-jl27hMZbjoEo0ydQVeTr8Zm-bFSym4tTmSaaBoWtUw5bLpv2l6M5kGS9WNRDpaVLke7o08xe7OReC6R~AnepDkSA__" alt="img01" />
                     </div>
-                    <div className="gallery">
-                        <img src="https://s3-alpha-sig.figma.com/img/9d15/d85a/c4842f3a8752cb53168ec1abb70b057b?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=LCvPArHU05vGQZV-6XxMhjbDocbMbNtsn-p6yTPeqwiuz9ppZC7-dRZSN24lym2-Fq8S1aFZsDyP8FU3DtfIn4r5sSyDVd20CTzM8UVaupxqrzBnuPC3Bgp4xZZCGxz6UUym0eorJ9SUpeVHlBq4ljI2NjINrteNrUX-vPURrXAZ0Rf0jz~40gCqW4zzsUgiFVEybSB6lp~TrYYXHIxklhIvUIDh3QwQXhGlPzd~URYYRSonMAGYYok~kr33h5lHpm-QJpyO0lfuQiWpyEe6bMASZ8eEKpVblkTO9Z05DtYzY47Axg3hFbQyn7QN~lHYSGOKYGRIS20i86~bAKCiCg__" alt="img10" />
+                    <div className="div7">
+                        <img src="https://s3-alpha-sig.figma.com/img/8617/a5ae/25ee4aa2ad522926670eec6990d4dfd8?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VRlJm~ycznmPPtReysbBUMSq5DNOhT2rztT8mobJCybO2BQGYSvtLUomy7-WWTjqpZmYHbj~pqJj0U-q2ts7gE1ebA5G~OBSNENiNoVAtY0SA0B3ZDcuooXLlwDtweuHUzxiRSjogknYyfrIh9PvKe6--QEWXMAOpJBhcGQTR4sHx7xC1PDoZJHm-tfnXI-o6sFxow8lGpQFiRqbwdeWP2bex-SMZvW5uwzK1GhcIBegUXOus3SkPcrjeU9Tv5BfsBmpjmQHMaefZ-pWt4CgOSVvQ5nQyRUIsin03blmAwElKmjIhAlywLR0DvTIp0VMcKum1VZxLNxiLs~TqdABKQ__" alt="img02" />
                     </div>
-                    <div className="gallery">
-                        <img src="https://s3-alpha-sig.figma.com/img/5fef/a2f0/5c85f954f99359a9906e7fc425e46898?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Lsp3FB5EUxJ6pWqR7T7EQJ5hSrGumuK~clDHGc67qEwt0ahzErI-o1jSOfEUo7fqMBCDOtA2f5T9UW2HS9SHFPo1BNqX2yQEMXQ8OT5vDU8HS18MOHlfIUeuaJs7QEq662EGkROxJfdxnUb1Xc4R9xn7hYPX5IgqMuOBMMZyZ7qnRVt~puzs9Fwp2Y98OF3Day5qaM~h0NgcVLISNf70uIXDdBc8puR9Gnvxh1KZJcgOfMuEbgUVw5PNB1f~jEigOQaUM0XILZvKyIKvX6LiiNkYqXfAF0zgw8yZ0llAFGfsGURkGGUj42cDyRbsUr6D271ZAKiD-HnYniudMZdCiA__" alt="img11" />
+                    <div className="div8">
+                        <img src="https://s3-alpha-sig.figma.com/img/6521/b928/1e965b9e2b4c3f113bb67ce649d7a461?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=snEwG553d-G6A45tUqfvkWo46nZi2LKYQwSQh1JCQ2L8Y9rykwL8Mi-0OalJ0WlxuC~Pg4IyQoA-SxKVzH3ks4~ZfaQON053qBAF0iEa0C-fkGY6gZG63qOCe1EbCHP4dpOE1DdaVE3QHGgUqdZ31JecWcPoSK6ItYQW0Hze6GCQIh4dE3MBAQViJzrY0YSUnZutv0qrDLq~XpIUshfOG6P5RixWJ8K4mOMvMSEcK7OmXlH28IVZ50cC9FcughQOmCyM9e6K3ic0BF6mGWxEtWBggANbV7vtGphblSUnTW65UZtU3RfOCHCMkD81j85nsgNAvyuM~HOmUGOqgoKFdg__" alt="img03" />
                     </div>
-                    <div className="gallery tall">
-                        <img src="https://s3-alpha-sig.figma.com/img/440a/a3ef/5561b85c0fb6d32db923d0081101ae6a?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gUHxo5W37Zu5RzYzR9slBT9qRt0LMpoOmwRPzvyBHlmogru0l6juwaJY9g3P6UBRvJQWGtpKP-5l~J7~h~-ua4Gy076lrrkQxOuw~8aLxglw7zC8Wm7h~b-WyQ-Pc3jMkpPc5pKc1AODmplf63rCJurcQtSu7bAXuWBQ0YwJIa07MKTH1QDC0ArjrxLw3eCoQLuwFvA0Y7oAkfb2Gsf4~Pv2xs4BE2fO~I-M6fcAJ-QUrueUeMUjCisDDFeOmKNAyB20m7Y7jre-iBFZQub03z1VfZhnkuYbqtNCwzZaukbjZiwoCZmJ12s8mfL8QAPq8Kirn22bzFPdqug2cFNZ~A__" alt="img12" />
+                    <div className="div9">
+                        <img src="https://s3-alpha-sig.figma.com/img/9c82/fc43/ae69e562278d76e28ce26cd902277c96?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=jVJcH6TkXqHtTTRfs03lSzJooG3CblyUWxJ1NNs1sCkIqkm40Pds9u4~bn8cuhCYoBvJC01Z~bYnXswbEA8oM-JsI99YgRfDQEnWY4kPKlY-8EmR68zix7-EZr0Hvppi4lQXeC7sX1~-Rm~hUGSeLfn02~OacDW-HPDi600sWfxDAZAh8NSeDFo7stByvZqVWj8N2Evh3pZeMBUkeh2xU8ndJlVxK7W9Y74899LpDDRziCondooRxNQVIu-aUTGNKdCErS4cCoVRuSudVNlm613rJway~LaHjDEzMqzhgzaZrgxKtPJilFbHfes1zCG6REilyOtQWKDVeCVUdRd~bA__" alt="img04" />
                     </div>
-                    <div className="gallery">
-                        <img src="https://s3-alpha-sig.figma.com/img/93c5/95c9/b90a0feb6593b9d24a0b3709e4c2bd86?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=dZrDE23EJGptLAdQwVNQooSCdg0owkMk5bdkJ6lX7Spe2eA6Wt4I45Tvx0xT1XTkv4G9dTpHUVKN1TOcapqNQ5qolkURHFbNyHir7HBrPuZEdp7yBKtUrp9zxPx-QGiLl3UjaPsyFJSuuOMWt-YNvBMGuIyPo2WOyCwFLPKI1YhAir-POtdeWof2ydMF~JyExP88fwtPhfq-aqYod3q74zgmlmSxMoSIR~H1Iwr28U-be9ZmaL2uW1nXGlGHmNjTScEkc1rGonJ-WHEGhYidQ0DBiLc3PVl03m5Kv33esu0AGRVVo2JMzQP4AqBslwVaBIEk-jDsLspkZiDWvxfoVA__" alt="img13" />
+                    <div className="div10">
+                        <img src="https://s3-alpha-sig.figma.com/img/0434/fdd4/a5432cab47aef939e9f35e4d4f9d4705?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gbOS23pexNTBEZlrnZ2Wcam3mvE6ScpFKcrg6l9OY4EaNBibR8L-01FpiN49vilMDA1jkec3s88Em66jjMhsZjzNyZRuvbVCt-wBUr14-hGy5NMp3gJCSR-vMH9v1c6Jf7LO73sF-VZn6rsWTO4M2F6V7WQQo3LcJC8Kpx1ql9iN2As34ULH4U8TevPIxDG7d5f2SDxgcUyQP1QOGrlFeNqgjPAgTo15nt0E7kNXr2OPUl9xEcJlH2S0g00PlQheTnK4fMsB-uL~FWq7esnSvzGr8dsf1dlfBsfpMWLwj7sDgfa9MTbxvlpUZaMBhu1~UIULNWttLpNzfCW~EvXe~A__" alt="img05" />
                     </div>
-                    <div className="gallery big">
-                        <img src="https://s3-alpha-sig.figma.com/img/a863/7b3c/2e3b6a00b8bbcfe1105f7916ee6a392e?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=W7lhSDPRtP2oh3bQ4RkxTjdNw5V4Rt2Wcz7Ks3ASIqq2r6o~3bN3zyOGysMx-rAUq3Vg3yRsjsMAu0gjtJfgUoyFib9Z8E-tIBsJpW~JAjLXZFSSpmMZsEIiIhVXjp1h1X2h-wah2OuGgoRj1EG04MZ7mHD~EX7Xiw6Qpf56Trnb0e1GJ4TmBsWVxYrIWMTuk2QaTCL2QFy5UNIipSz6uQyVM97OkBBYlG0cZ4JYssKZet3lvCzytPXK5e-6A-FCjFJw2TNdHN4bX6DjnH6mHpL-lsbowzEMFLGcX9G6qm4lyz-3eetoI2uZEC6l9-edoQLv2Z-pJ9u-9pAOmxDcUw__" alt="img14" />
+                    <div className="div11">
+                        <img src="https://s3-alpha-sig.figma.com/img/1a15/7a9b/d8d20fe935041ffe7ab54449fbea9b8b?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=bFu1oaEmCjGW-wIDxiw~zhGRZf-zGkthnLuZVzb6tUjB79VZKGNvGkKGY0QKTCuGLszz-BFQVfDZJhCOjrCfvY2j-4A0gnStkgE7mVdu6BJBAVWWkFAczCzsAKTuwx7maB1M2tR2bApqjdOHOZlDJQJDT9vfPzqpwRmh6weQeN9aN9mIt9LFJaV3Qf4-Kq-fTKySFSLOvsv6dRgfCkJIy0kKrpXOW4ozuXaPGc8a69eAcyvG97VCQtvHMAEthZnBQiwOtHrXaCelYSqrkiHTWY6fpHvCrpYjrr0d39xfmSMD9E4qHDSM2WPbM4VMUchIpfotsH-yYolHqXgCWo5sLA__" alt="img06" />
                     </div>
-                    <div className="gallery">
-                        <img src="https://s3-alpha-sig.figma.com/img/28b9/b715/ba034abcefb527c735a75e71e050adde?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K41~5Q4rlDm6mGnW-cYugSh0ZytyI3dYgE7M3TSGyOSgWQEuR25D6DXPycxs-Zh0~Wy-P-z2qzjxbYyYAcpoZUz0g-JqRmzi4tJQbgt716lRRaUQVaaiGgoUsv8xNpgnhTN-aXbos5JokU72pfXCRUa4QRsnFPby27pjhegEAd-Lm6TRMNMcM4tqpn97ZPcGKMOh7TUx2gnf5ZN6A1r3agwKSKjuVzIXauZQubP8fsvJ1uM0sM~YvLCXBVspgI8uBGv9ly30A3kgo~Xn21cOAm-quqCcz0Q9ZpbV~PO9bWCIB079jSmxWCH3lkmkvCKo-yVmWJ9S0mrX~56eZHXkYQ__" alt="img15" />
+                    <div className="div12">
+                        <img src="https://s3-alpha-sig.figma.com/img/4e43/a559/d68e2d123b678f9446c814eccc4c4e68?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=buUSat2LJrz6oV74RnTeUzIfuJFCNYJm23rGtQWbEWhGd1fwOnwZiBkjlC~j~etfujhaAtZRdyuW-PcEdaJa1R1QALqkDevVkliZcZAlrhmzL4G-d4Ngu0Rw60gwJ5wBZEcjY64JFjW~Jy-OPFj-w8FZ5GEji6im5QZVaRMEOKBi0E1Pp5x5s~tG555TiO-WAxyg33nGQ4Sk72U7JOJY4YOleU9ymxBKN6uGuX5saXKYyAmzAfmQh4QKcMYXVPDbpF5BE9CWi1g2Mat0KREK93y5RpQ2jolMyBZbsdjd-eHYhSS52S6e738lVO~oj8qvEUsjrO4CrFN1xbrlr-OdFA__" alt="img07" />
                     </div>
-                    <div className="gallery">
-                        <img src="https://s3-alpha-sig.figma.com/img/c11e/3451/61a3b99882779105842d20dd26b105f4?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=GMeeNOQeD833YnPVpuLcVLrrDfToxKaCmPlzO-OMtx8hBOnfLYlajQmgjchtuHCs~3J1YPW8yxrFOm8zoDfCGxz0NLrZPHkjSeHnYOOLHqgrVi~GZUzjBF1ovDX4hg0w8rE0lrTQynAuDNkq7Vqc2gkvxm9aFdALug4-~1UTLaBPgvMGSd6VoiO41KVNY6S0J4I4pnY4PVRsYdW96jdTXVv~7wvsKSoQxbZbHohvAyn04Jjyb-atDOx5aAdauUrVK-SAxKOl4JVRPR3LkvlpPDStqJw2qgkDIvIidIMqfEEgXokAX3wcGW-EKa1rT6itQy78QwqKXuhISsxGFAn~Lw__" alt="img16" />
+                    <div className="div13">
+                        <img src="https://s3-alpha-sig.figma.com/img/5a6b/207d/fff8704aa09f24e5d144271f01125edc?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=hH4okAvVEEqEJbvfEvXndwmsRdTyxbm23h~MUA7gZp89CC6HmspOSXtRsFhN79CA-2LCfJgKCf5ot1MtAOpawtdwPXlhd9iZmBeIbUPANwRBE-ze7Cc~8-SKutCFAQoNVmGKJlNyAIESxV2cqMOrfxsmakzmv9oQS3nF-Xp8nE~F28xsInlSTIKN8qjwKODliMb4M~9PweuPFh~YTkoCrgsaxL6LSHscagb9R2LWlLEKw84O8WWymOi~SCPRIMVSvGTEA~hRSy0Q2pJf40K5OKhtJ2cWSImc-vwCnmLblzSD~NHPiOp1QkbpbSvAk4V4sa33G8La3RXUE0GLIEAmiQ__" alt="img08" />
                     </div>
+                </div>
 
-                    <div className="gallery">
-                        <img src="" alt="img17" />
+                <div className="parent02">
+                    <div className="div14">
+                        <img src="https://s3-alpha-sig.figma.com/img/5d06/b58d/ba0e694cee79ef5384b5687366cc3ed3?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C6gpXgx8XuGMsFxiuAvkzBpmClmoj~ZYFmBJgbAnYwKPm6ZgRQzCz0vpfjQiKIkT3gZMbORxSo~JYWEqlqdXg4vIOZej9z60QWh~LJ1HXHLrzghbjIZ8VwuBS0vR5~hiQQbxXyOLoaJlN6BgRT700A6e5ub5obRWdREa0l-ydXq8~djtElhsxid6f3Rnwx0hrgSlH9QrYN3uw0y08pyShalpBkkf7cBFJ0fyZSqRv1H8EyDGZbV764cxEQbOi93ZpwU1o1-Y8gC~dfLn9gWsW8I7JAyxkavOWhIDCf9-cUKNlD6i2aAYT~Iu3l8hF57cbGkwLsZ8uBNKoDnjZsOWDA__" alt="img01" />
                     </div>
-                    <div className="gallery">
-                        <img src="" alt="img18" />
+                    <div className="div15">
+                        <img src="https://s3-alpha-sig.figma.com/img/9d15/d85a/c4842f3a8752cb53168ec1abb70b057b?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=i1OvHjUKpFS5jrbYqzQirtv-Pa73dGBbu-CElUU4fxzsmzl46A~Hdb4Kolj2IWqgrTLMk0pzEqkWsrtmQjAV3UlSMr1FDOgfuTVxkLrCNHYKSc4nX1rW2xURIMpCOFLZsfDpHZhsR-rPAgVbqfpvDiFvo2KFLu4G0AHSxjY65PS6UVKeSecr0VlAcT12wBALnKAI3NU6xIx4PhRCSopG9YwTnD0Wc5y65tOMjsoc3FTf5dlhC3-fkzh6Kc0PYiyO-hIFFzfNLSZRsYI307LBUutOD03Os2t9QdEASoKXc4nSt1dW61Vw4trHAVpQu0ggl4PrAkS7BU2imxPBWmCN8A__" alt="img02" />
                     </div>
-                    <div className="gallery big">
-                        <img src="" alt="img19" />
+                    <div className="div16">
+                        <img src="https://s3-alpha-sig.figma.com/img/5fef/a2f0/5c85f954f99359a9906e7fc425e46898?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=qsrQxQsxBosCQsGrtw1dp3ujzoOE612Lf7L5sKgmjK0NJpy~XkAij7esPWklQXRJ4RG64itOaOtp119zPuGGSGQmU3oNyrxOgow7A5SJkU4X5TbtnJq~27BLOJiezhR9ZYTfOLvka1CnotMaN3OTpmCxkZmsKwPsvmxY-38TYtY3z0gZQxo4HWHpwxpvv5g6Z3GQxjoMokx8C6wcmj6O1pqAaCL5WTWJa7YTR~z64qXajDjUFZnoanRakc7mmAvw8wi9QtHB6QiElE3FS8eIu2EHNdaonGr8XflU3IERctBWtM~CYRLwg75XNZH9FupMANdETgtFgl~qRcvdjPi5Og__" alt="img03" />
                     </div>
-                    <div className="gallery tall">
-                        <img src="" alt="img20" />
+                    <div className="div17">
+                        <img src="https://s3-alpha-sig.figma.com/img/440a/a3ef/5561b85c0fb6d32db923d0081101ae6a?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=huSszrJCDqfTfVf6EkNWw97E4JF1t6fRmIVaOcmipwzEDAo6C2o6yPdLTPCIllBY4zLGw8nep48-Aqr3Buhlh86tdhB7tgvjvnIC8yWrbCT177Vi1QhBuhqpF-KXQ8OlKbcTnAzLcXNM1kBC3nPaCXPn9V24lD9Ybd89PJS7TDGAB~Xq5i1GJ6oopQ-8kb9eXw0C6dk-RwNfHH7pbvGjEYSeB0dPBKKoMUXUJqQtaO0CfPPAuuaH~~VXqazua7yUqIFJXsfKhpWv6l6W6tOo5OXeRrcAtgBeKKe4zL0Qw4zUrEHZN0GjoY5wzGa7-WS34cvt--L4EzjgO1xF0L74Mw__" alt="img04" />
                     </div>
-                    <div className="gallery">
-                        <img src="" alt="img21" />
+                    <div className="div18">
+                        <img src="https://s3-alpha-sig.figma.com/img/93c5/95c9/b90a0feb6593b9d24a0b3709e4c2bd86?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OTWxa-NP-7tKtXao5uAwwvi0vqizKgD-jwd6HVlhzYoTx7cbPXTuaGoeqNyczCRUEh8tYq4TFQVzk7QCDhtFtbuU0k1vX~aDy5yMCoH~FoU7OlCw9fG7Nvaty362IuL22-z7N~bfhbn9EEqi6c20APUniLxuxPJ6bdx9SkQBS2it1XvohPSXHzMeOyPtExYTz9VuNOAvHrGILEgcY3w0RS2TPvkaipwMk3p4VL2M~qjjAht0o-3~ufz6L-AQQ5aBXGE8kmdkX4hlITnPW0xRcu9o2iQB9US1s36-8Cym25t7zRcVGQDx8qYvn9yH8ByLAZWnKgLBF6nUmEYHIYwBgw__" alt="img05" />
                     </div>
-                    <div className="gallery wide">
-                        <img src="" alt="img22" />
+                    <div className="div19">
+                        <img src="https://s3-alpha-sig.figma.com/img/a863/7b3c/2e3b6a00b8bbcfe1105f7916ee6a392e?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=U98d~c7MrrI0a6tTos1UBHORBhoG05Tm7yjHDS6i0QLIrykSAGihGeNLYKJops9BbOI-7navGBupuLzy42ZMphR~e5pBoe9hjs9A0bQMd49xxmnCQClEHaXd5keRkChVMXQdc3b2NxW2JwI6rA~QJK3J4Uvg1J7LD2x2PO~bsj4Vn8iQIIVnmH3Bt8NZOo6asM5nOxVBxPw5ugvbeWR4bV8LIjte-NP~BrTCAlS87gPEDaEtwoF5Oi6UAGPNXPGqR3abZs9LJbUiYs8uZkgR0V6ZJwmLZYKvUpa3hh0H9fbXJ0NcBLTNq5AVqusZc-zLu97Bdg6tt~azyx41lzH4IQ__" alt="img06" />
                     </div>
-                    <div className="gallery">
-                        <img src="" alt="img23" />
+                    <div className="div20">
+                        <img src="https://s3-alpha-sig.figma.com/img/28b9/b715/ba034abcefb527c735a75e71e050adde?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=DvPtQZVNKX-MwfM7vgrlYseQiS24lINdJmG41VSHfNPa7z0M9ljewo3UYSFJTfNlOg-fTYtn~n28wDmiMA8yuOgckwBIPOsD~abRL4nxLkkwdXX81Uv3P2Bu8WB~CczrdMLcPJ-QhrpCIV1hJ5ydSKHbGmh-GWbY-jP30NLXnPtHrpE6iSSmcBLd2olsuzZOHLMlDgviuc7Em9d0K3cV3XciX-TyZ6tpPHh~F74TfBlw4j1szRLvh5YKkKF9AU5eI2vNN3YBldkCbQlLcJ~fCWu4PO3jdEINldTQVmjY7KjIQM4mYnlkdfJUiApixdoAsXFiiSzQue66NyG5WNBHRQ__" alt="img07" />
                     </div>
-                    <div className="gallery">
-                        <img src="" alt="img24" />
+                    <div className="div21">
+                        <img src="https://s3-alpha-sig.figma.com/img/c11e/3451/61a3b99882779105842d20dd26b105f4?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OVRSXdakwc6y8FkYHKzk2YmJCR5tdH4caHb5leGRFaLkbukfSPYBqE8-LCcFtfh~ZZFBwrSdNHgc26Mc2oQpLeTPVPInrC--GBPP74JlSTSv-UqdDyU3cfWAixw9vU6YeopsQ7igHGvYLJlJst0UiKHc8XG1z-TDuzg2-wXf6FSNyV7DmkC5TljjMlblG1Fyw7G-7nwkLaYN7zc4QnccYmsi4LI6baN9AltGiXXFHpSeyWe7N8HMyPipp7wujzKi4ea4pVEgSVoOjVmqG7PY1w1u3RXyhMieP9L~hUQ5uHE2pTNuNiWU10LQogTTn-SMqLia1D22SUdS9QaNp5IStw__" alt="img08" />
+                    </div>
+                </div>
+
+                <div className="parent">
+                    <div className="div1">
+                        <img src="https://s3-alpha-sig.figma.com/img/24ba/eb3d/49c149077e65e33a96fb00f428230432?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=FZGHcCTSxklvgYz40utIX~0qOv511KqHmT1NIMif6~m95cjbA9zmju~NRtWRhDMOB-4BYXiwJoehTJaSM-YWcZK-vMfkfTAax-PBYkF7CUpmxoCXVfoCRoGkNW1E6ITVNNmehL902EVj00pJTWJL-cdxKtiEB8rZFHKTDfLd5lYNmK4Ajmh8dL5-PM2E6Qj5tHK-NiRGbCIaN25AeVON99R~iOQYlt0LjmGqfsVio3-cT7AVSJzERaGalFD--nDrw01aZ3rIsGrhwEuepPnvAS5BXTokBa23UYIBKMArXmaeVsi2PV5AGOB27-WNRDb8rPLIKEXpsG4DztJht~VjOA__" alt="img01" />
+                    </div>
+                    <div className="div7">
+                        <img src="https://s3-alpha-sig.figma.com/img/5e52/ced2/071eff545d1b16dd4bc36fd771859d9d?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=lgqH6vxwwgsrITvNYxh-~p40IpkwbbWnLWPrbPT57Cid1ePskYIfgTfTmCORpMoeZaiP-rT3ni9Tmw3szjGpn9vo8GX8-70ejAbSgUCy5yvtwIcbLI24vLSkI~HmikTWbH8SdERubIzN2SJu6ZK2jvDs99Kxm0TwsU3WHw66WKt2sVHGovUlBO8BxxJp6IZ9vZSxl1TzFgVpLvSu2nia1XALCVJSDO~5psPGoioyGiItS8UdTzJRqL2icQMNcF8U1Gra7Yuj6m26xhP-oYmqYpAlfrU9qEva4YLRu557gbtBq56TtG6tuxUlP1ElwR0c1FdbtMGFnSsfzaM6wJv7Hw__" alt="img02" />
+                    </div>
+                    <div className="div8">
+                        <img src="https://s3-alpha-sig.figma.com/img/251d/2fdb/537abdd9e098d432d20e7e633d4c2b73?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=dp1kSuhaszxmyZu5eo2O0qe86C8ustx42z9Mk9QyQhiP0a-~WT~0Qmiid6SCSowmtfFslZssgtyhFsvfzgU3yYsUZJlwxjJFWa6tBPEbfAV9gF4LHslmfVlbH226rBlqRbUGscqWNypA1TaWf-o7dPC-m2mvM4VwXSF9Dhw8qzQkHTf-CKnc40ZUdvZdkuDellpMKcj46ah08kgqoxRUmTQt20m9OmdfrnBz9~mn5enVoKuH8ILCNprkk6gfW4FO9pH5Proha7YnsI4ZnV2FHqU6qi8p3HUctIsd4usm69n2wkp0NP5Pkx~AuEWs7EbWzQd2rMbIqRA8R2F9rXSgAw__" alt="img03" />
+                    </div>
+                    <div className="div9">
+                        <img src="https://s3-alpha-sig.figma.com/img/c2c3/8cac/5270c8133fe9fbba80ef684203daf896?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=eRQP5jmIHeajsP7slKYznnxLatM8k7d0g9CHRu7HMtBY9O25q5yjoRyQ9pe7xblMGOKCQxkblrZbE15MdwC8dRk7WNMjPgHUgeHmVrETOpN6B3fLx7Wga5dSOQr6XA1GiJh3BZEwRVEwQTvNWHjTVy0x-QHuNl8GWiRAPlkmgtwlY1LcXAa06pARtMB25ON0pjK342-1p~qDLvKACiNwauMMWEDJMtyYszCdedPMc5vlQwYFtsYsBA0Z7YLHDWG~XQKmCr8k-xw9W6iQlEUX9gqRCOnXYm8a0RwJIL5WEPWGbvwGwWw~iqetfrce1rYo9VXFYTKwUY0CS5LTaoUGlQ__" alt="img04" />
+                    </div>
+                    <div className="div10">
+                        <img src="https://s3-alpha-sig.figma.com/img/efdb/cec2/a35932c0e5b21dfbfb30629b08803e12?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=B83PypsjCCf6H-aZA0lR09UkwmZy5jwCOzJBZtoCxYat7aj52vnQAwKtIo-nE4BqwzI-bRIVBrERS~Ya0F-FpE0yoYpDyQUuFNK7HKHIT8YqmIJGdoziN6nAEDA6sKmsqrzvU4ERIxQ39xWHEx-6DgpqwEIEDt4IQCfoccXVtNzzvZTqcNE2J5Itbj1N~rCysCC4JKAlZfiVoZ~MXGA3nlSqJf7EY6qWEtvvgxTfT50Vvc9h-bfB3WY-Q9000mkRzhmxR~o1uJZNmwbtVyx-9Ny9jit9z9J2LSTS3JOscQd7tLJq4yOLK-ty3-qAy822BsUJ7dwCL8iskre3smRoDA__" alt="img05" />
+                    </div>
+                    <div className="div11">
+                        <img src="https://s3-alpha-sig.figma.com/img/fc87/170d/90c406720a69ef576defbab016788d2f?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=km1HwoJurpBiEt~xt2WoX6P-JQQFtY1woNMuhEBcIwVigACVBHHV99fsqU2kCuwfdBI1wurAjZnnF6CAew0sGV8yOi26Zi5zj8V2Uh2C4D5ilYj-H1HTwBcj-2Y-ErKjld-K4kHTvKyW-d~QQqJsQScWCF~FTIPQoJ1o~xh3RjldG6~PUI8NMrBcd4xKfzHGGYFzh~onmVfsesizaIjT4CQywjoxLCEoRWjcFomRCHvTMso8yFgEEAR~Up-Hvyg7fDpIo9Ww05fim1AHBdh5usLT3Diz4RbRGoImQhzDj7bbeYSOzlXCUbsrpbBUd7H4m2DjFt7D-uYCQhMY31HD0Q__" alt="img06" />
+                    </div>
+                    <div className="div12">
+                        <img src="https://s3-alpha-sig.figma.com/img/7f97/05cf/efd22d0a9bd512eb96d8b30fd398822a?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=enVTHvVpGmBP6wrIfubJqoFBZp5Hu3pvalvxjzTpc1yql~T4A06pZaP9WJYbFOtNgHu3zBTf2zubzvMf0~pmmge6UNq~WxWmnAsMLc6OZ1GK1N4gwp4vcyZYa-~XYm4NxxxDXCEdm~O09D06jegmklSG11HVLvK7ZyaR40s4Mmoae8eZ2niWrfeXTVJfHav6ZYfTU4a0B4eyLQKLxkATYSaIXL-jDsE4nvI2GVOQIlRwNoLhB4N9ewT~zsdSJ~hmS7cIGDlFnxinuQ9YpBvoJpoVkU3ZMpMrhDO48IXbZ2iiOITfNKvpI0dlyhLmfzMCMW~x173i-MEhTx32aiGBMg__" alt="img07" />
+                    </div>
+                    <div className="div13">
+                        <img src="https://s3-alpha-sig.figma.com/img/5a6b/207d/fff8704aa09f24e5d144271f01125edc?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=hH4okAvVEEqEJbvfEvXndwmsRdTyxbm23h~MUA7gZp89CC6HmspOSXtRsFhN79CA-2LCfJgKCf5ot1MtAOpawtdwPXlhd9iZmBeIbUPANwRBE-ze7Cc~8-SKutCFAQoNVmGKJlNyAIESxV2cqMOrfxsmakzmv9oQS3nF-Xp8nE~F28xsInlSTIKN8qjwKODliMb4M~9PweuPFh~YTkoCrgsaxL6LSHscagb9R2LWlLEKw84O8WWymOi~SCPRIMVSvGTEA~hRSy0Q2pJf40K5OKhtJ2cWSImc-vwCnmLblzSD~NHPiOp1QkbpbSvAk4V4sa33G8La3RXUE0GLIEAmiQ__" alt="img08" />
                     </div>
                 </div>
             <Footer />

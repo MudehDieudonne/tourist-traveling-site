@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 import './Card.css'
 
 export function Card(props) {
+
     return (
         <div className="card">
             <img src={props.img} alt="title" />

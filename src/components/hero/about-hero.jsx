@@ -12,7 +12,7 @@ export function AboutHero() {
                 <p className="about-smallee">Discover the lands of a Thousand hills</p>
             </div>
             <div className="about-img">
-                <img className="monks" src="https://s3-alpha-sig.figma.com/img/4ff2/5fbb/d22801330eccf9aaeedf7388f729ecdf?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ZTTtcA7umDxF2EKykhyQ2uyykn-mTE2DzNVFc5lMgwHCD8K2wK7oO3dzX-PIwC70gzpE-2qXuUO2D4HdJuaEAAOHJN8cXFknPUM0Mb6vNZOnrsBEaliVODTTrdsydZvu67~~~2VGTiQK4Avs9X4gVs-v2b250SjTzJh7XeIn70vmVcqUX5u0cvq~V3iGhf8HYpFt3oBE6zT0NoUz4rbdSGKDxKC4iXKJWhEG9Mjo0l8JSobSoGq49nsBaXezkz--3ajxBaiWgUM-20Kd4hk8Af6LGX0BIsieZJlrMTmhJu8HaUBJlzRlA0LQxT1Y7Sfp2HFWSgs3tQg--oqMHVfaHw__" alt="monkey" />
+                <img className="monks" src="https://s3-alpha-sig.figma.com/img/4ff2/5fbb/d22801330eccf9aaeedf7388f729ecdf?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=szEUR6hNWkXzJIOVxDtJrT-TXVhNj5bWHAWhZyDfvjEjnPRhIwR750uREpQLgLKzhTGQ08U~F1sQt2oX3ZrgHXO9MgOn9CxEoyWSek0GvKkz0r7rl16qmn-4ZrUTlY3QdFfGb9WgNy0ToNd-DwtGVUnd6mDIZGLGtXza1hufCrG~9GinbDc7n2AesJyvlsQQwdduRwh-sT5y2kr92sIWVWyyf6QQEz1VUV8GpqBTLZp3pu5aV5f0L~0jLoLvrQRARY5qWM9QI6lAele9TXfXPfT9mryWXUUBScuw5yaxczQVnkpOLzLb6dWDBXWeCeZCFP47V41VwAPnkNYSTNZazw__" alt="monkey" />
             </div>
 
             {/* <div className="search-container">
