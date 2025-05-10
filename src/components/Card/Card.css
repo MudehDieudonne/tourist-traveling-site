@@ -1,0 +1,52 @@
+.card {
+  width: 350px;
+  height: 584px;
+  border: 1px solid rgba(168, 168, 168, 0.562);
+  border-radius: 5px;
+  margin: 0.5em;
+}
+
+.cardrnd {
+  width: 25%;
+  border-radius: 5px;
+  margin: 0.5em;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+ }
+
+.round {
+  border-radius: 10px;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1em;
+  padding: 1em 0.5em;
+}
+
+button {
+  max-width: 117.25px;
+  max-height: 56px;
+  background-color: #C7923E;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
